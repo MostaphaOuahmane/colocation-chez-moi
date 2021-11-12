@@ -6,10 +6,10 @@
 .nav-bg-opacity {
   background-color: rgb(255, 255, 255, 0.1);
 }
-/* body {
-  /* background-color: aqua; */
-/* color: white; */
-/* } */
+body {
+  background: #131a24;
+  color: white;
+}
 header {
   position: relative;
   height: 100%;
@@ -22,7 +22,7 @@ header img {
 .titre {
   position: absolute;
   z-index: 1;
-  top: 25%;
+  top: 20%;
   left: 30%;
   color: white;
   text-align: center;
@@ -55,12 +55,42 @@ h2 {
 
   position: absolute;
   z-index: 1;
-  top: 45%;
-  left: 30%;
+  top: 50%;
+  left: 25%;
   color: orange;
+  width: 60%;
+}
+h1 {
+  color: orange;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h3 {
+  color: orange;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-style: oblique;
+  font-size: 2rem;
 }
 
 .nav-orange-opacity {
   background-color: rgb(255, 255, 255, 0.1);
   color: orange;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+span {
+  font-style: oblique;
+  font-weight: 300;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1rem;
+  color: skyblue;
 }
