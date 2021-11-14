@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      //   var x = 7,
+      //     y = 3,
+      //     z;
+      //   z = x + y;
+      //   z = x - y;
+      //   z = x / y;
+      //   z = x * y;
+      //   z = x % y;
+
+      //   x++;
+      //   x++;
+      //   ++x;
+      //   x--;
+      //   --x;
+      //   //   z = y++;
+      //   //(z=y++) hna z ghadi tsawi 3 machi 4 hit z khdat 9ima dyl y 9bl mn ++
+      //   //  bach zed takhd 9Ima dyl Y odzid 3liha ++ khsek dir haka (z=++y)
+      //   z = ++y;
+      //   document.write(z);
+
+      function println(text) {
+        window.msg.innerHTML += text + "<br>";
+      }
+      function run() {
+        var num1 = parseInt(window.txtNum1.value);
+        var num2 = parseInt(window.txtNum2.value);
+        // println(typeof num1,num2);
+        // switch case
+        switch(num1) {
+          case 0:
+            println("zero");
+            break;
+          case 1 :
+            println("one");
+            break;
+          case 2 :
+            println ("tow");
+            break;
+
+          default :
+            println ("other");
+            break;
+        }
+        // if else if else
+      //   if (num1 > num2) {
+      //     println("num1 > num2");
+      //   } else if (num1 < num2) {
+      //     println("num1 < num2");
+      //   } else if (num1 === num2) {
+      //     println("num1 = num2");
+      //   } else if (num1 != num2) {
+      //     println("num1 != num2");
+      //   } else {
+      //     println("entre un number plz");
+      //   }
+     }
+    </script>
+  </head>
+  <body>
+  </head>
+  <body>
+    <label> Number1:</label> <input id="txtNum1" />
+    <hr />
+    <label> Number2:</label> <input id="txtNum2" />
+    <hr />
+    <button onclick=" window.msg.innerHTML = ''; run();">Commit</button>
+    <hr />
+    <p id="msg">hy my name is mostapha</p>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function println(text = "") {
+        document.write(text + "<br>");
+      }
+      var date = new Date();
+      var d = date.getDate();
+      var m = date.getMonth() + 1;
+      var y = date.getFullYear();
+      var h = date.getHours();
+      var minu = date.getMinutes();
+      var s = date.getSeconds();
+
+      var StarDate1 =
+        d + " / " + m + " / " + y + " ; " + h + ":" + minu + ":" + s;
+      println(StarDate1);
+      println("<hr>");
+
+      var d4 = new Date();
+      //   hadi chohor (month)
+      //   var str = d4.toLocaleDateString("fr", { month: "numeric" });
+      //   var str = d4.toLocaleDateString("fr", { month: "long" });
+      //   var str = d4.toLocaleDateString("fr", { month: "short" });
+      //   var str = d4.toLocaleDateString("fr", { month: "narrow" });
+      //   println(str);
+
+      //   hadi l2ayama (weekday)
+      //   var str = d4.toLocaleDateString("fr", { weekday: "long" });
+      //   println(str);
+      println("<hr>");
+      //   chohor
+
+      var lesmois = [];
+      for (x = 0; x < 12; x++) {
+        var Mydate = new Date(2021, x);
+        var str = Mydate.toLocaleDateString("fr", { month: "long" });
+        lesmois.push(str);
+      }
+      for (i = 0; i < lesmois.length; i++) {
+        println(lesmois[i]);
+      }
+      println("<hr>");
+      //  l2yam
+
+      var jour = [];
+      for (y = 1; y <= 7; y++) {
+        var Mydate = new Date(2021, 1, y);
+        var str = Mydate.toLocaleDateString("fr", { weekday: "long" });
+        jour.push(str);
+      }
+      for (i = 0; i < jour.length; i++) {
+        println(jour[i]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        height: 200px;
+        border: 2px solid blue;
+      }
+      body {
+        margin: 0;
+      }
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div onmousemove="window.lbl.innerHtml =event.clientX;"></div>
+    <p id="lbl">out</p>
+    <img
+      src="img/Les-fruits-768x768.png"
+      onmouseover="big(this);"
+      onmouseout="small(this);"
+    />
+    <img
+      src="img/Les-fruits-768x768.png"
+      onmouseover=" o1(this);"
+      onmouseout=" o2(this);"
+    />
+    <h1 ondblclick="this.style.color='red';">welcom 1</h1>
+
+    <h2
+      onmousedown="this.style.color='blue';"
+      onmouseup="this.style.color ='#000';"
+    >
+      welcom 2
+    </h2>
+    <h2
+      onmouseenter="this.style.color='#aaa'"
+      ;
+      onmouseleave="this.style.color='#000'"
+      ;
+    >
+      welcom 3
+    </h2>
+    <h2
+      onmouseover="this.style.color = 'orange' "
+      ;
+      onmouseout=" this.style.color='#000'"
+      ;
+    >
+      welcom 4
+    </h2>
+    <h2>welcom 5</h2>
+
+    <script src="cours.js"></script>
+  </body>
+</html>
